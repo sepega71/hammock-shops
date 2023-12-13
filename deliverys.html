@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Hammock Shop</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231213100828">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="120" data-scroll-show="1000" class="header _header-scroll _header-show">
+
+			<div class="header__container">
+				<div class="header__top">
+
+
+					<div class="header__top-left">
+						<p>Качественные и надежные гамаки на любой вес</p>
+					</div>
+					<div class="header__top-menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Главная </a>
+								</li>
+								<li class="menu__item"><a href="catalog.html" class="menu__link">Каталог</a>
+								</li>
+								<li class="menu__item"><a href="promotions.html" class="menu__link">Акции</a>
+								</li>
+								<li class="menu__item"><a href="deliverys.html" class="menu__link">Доставка и
+										оплата</a></li>
+								<li class="menu__item"><a href="#" data-goto=".bell__inner-right" class="menu__link">Отзывы</a>
+								</li>
+								<li class="menu__item"><a href="blogs.html" class="menu__link">Блог</a>
+								</li>
+								<li class="menu__item"><a href="#" data-goto=".bell__inner-left" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+
+						</nav>
+					</div>
+					<a href="baskets.html" class="header__top-trumbs _icon-trumbs"></a>
+				</div>
+				<div class="header__bottom">
+
+					<a data-da=".header__top, 768,2" href="index.html" class="header__bottom-logo"><img src="img/logo.svg" alt="Логотип"></a>
+					<div class="header__bottom-phone phone-header">
+						<a data-ripple href="tel:+79604951818" class="phone-header__link">+ 7 (960) 495 18 18</a>
+						<button data-ripple type="button" class="phone-header__btn">Заказать звонок</button>
+					</div>
+					<ul class="header__bottom-list">
+						<li data-da=".menu__body, 768" class="header__bottom-item"><a href="#" data-popup="#popup" class="header__bottom-link _icon-profile">Личный
+								кабинет</a>
+						</li>
+						<li data-da=".menu__body, 768" class="header__bottom-item "><a href="baskets.html" class="header__bottom-link _icon-trumbs">Корзина</a>
+						</li>
+
+						<li data-da=".menu__body, 768" class="header__bottom-item"><a href="#" class="header__bottom-link _icon-search">Поиск</a></li>
+
+					</ul>
+				</div>
+
+			</div>
+		</header>
+
+
+		<main class="page">
+			<section class="delivery">
+				<div class="containers">
+					<div class="delivery__top">
+						<a href="index.html" class="delivery__link _icon-arrow-grous-left"></a>
+						<h2 class="delivery__title title">Доставка и оплата</h2>
+					</div>
+					<div class="delivery__wrapper">
+						<div class="delivery__forms form">
+							<form class="form" action="files/sendmail/sendmail.php" method="POST">
+								<input type="text" name="form[username]" data-error="Error" placeholder="Укажите ваше ФИО" class="form__input">
+								<input type="text" name="form[tel]" data-error="Error" placeholder="Укажите ваш телефон" class="form__input">
+								<input type="text" name="form[adres]" data-error="Error" placeholder="Укажите ваш адрес" class="form__input">
+								<select name="form[sel]" data-class-modif="form">
+									<option value="" selected>Выберите способ оплаты</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+								<button type="submit" class="form__btn button">Заказать доставку</button>
+							</form>
+						</div>
+						<div class="delivery__maps">
+							<h3 class="delivery__maps-title">Самовывоз</h3>
+							<div class="delivery__box">
+								<div id="map" class="delivery__box-maps _icon-poi map">
+									<div class="map__cart -ibg"><picture><source srcset="img/delivery-karta.webp" type="image/webp"><img src="img/delivery-karta.jpg" alt="карта местоположения магазина"></picture></div>
+								</div>
+								<div class="delivery__box-info box-info-delivery">
+									<h4 class="box-info-delivery__title">Адрес:</h4>
+									<span class="box-info-delivery__span">935902, Россия, Новороссийск, ул. Сухумское шоссе
+										80</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="trend">
+				<div class="trend__container">
+					<div class="trend__wrapper">
+						<div class="trend__info">
+							<h2 class="trend__info-title title">Тренд месяца</h2>
+							<p class="trend__info-text">В честь начала летнего сезона скидки на товары месяца 15%. Успей заказать и
+								в поход!</p>
+							<a href="#" type="button" class="trend__info-btn button">Подробнее</a>
+						</div>
+						<div class="trend__images -ibg"><picture><source srcset="img/other-img.webp" type="image/webp"><img src="img/other-img.jpg" alt="Тренд месяца"></picture></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+
+				<section class="bell">
+
+					<h2 class="bell__title title">Отзывы</h2>
+
+					<div class="bell__inner">
+
+						<div class="bell__inner-left inner-left-bell">
+
+							<h2 class="inner-left-bell__title title">Заказать звонок</h2>
+							<div class="inner-left-bell__subtitle">
+								<p>Если у Вас остались вопросы, оставьте контактные данные, и наш менеждер свяжется с Вами в
+									удобное
+									время</p>
+							</div>
+							<form class="inner-left-bell__form form" action="files/sendmail/sendmail.php" method="POST">
+								<input type="text" name="form[name]" data-error="Error" placeholder="Имя" class="input">
+								<input type="number" name="form[tel]" data-error="Error" placeholder="Телефон" class="input">
+								<input type="number" name="form[data]" data-error="Error" placeholder="Когда перезвонить" class="input">
+								<textarea autocomplete="off" name="form[]" placeholder="Комментарий" data-error="Помилка" class="input input-textarea"></textarea>
+								<button type="submit" class="button"> Отправить</button>
+							</form>
+						</div>
+						<div class="bell__inner-right inner-right-bell">
+							<div class="inner-right-bell__slider swiper">
+								<div class="inner-right-bell__wrapper swiper-wrapper">
+									<div class="inner-right-bell__slide swiper-slide">
+										<div class="inner-right-bell__reviews">
+											<div class="inner-right-bell__reviews-img"><picture><source srcset="img/bell-profile-img.webp" type="image/webp"><img src="img/bell-profile-img.png" alt="фотография профиля покупателя"></picture></div>
+											<div class="inner-right-bell__text">
+												<p>Уже не первый раз покупаю гамаки в этом магазине. Прекрасное соотношение цены
+													и
+													качества!</p>
+											</div>
+											<div class="inner-right-bell__span"><span>Евгения Евина, покупатель</span></div>
+
+										</div>
+									</div>
+									<div class="inner-right-bell__slide swiper-slide">
+										<div class="inner-right-bell__reviews">
+											<div class="inner-right-bell__reviews-img"><picture><source srcset="img/bell-profile-img.webp" type="image/webp"><img src="img/bell-profile-img.png" alt="фотография профиля покупателя"></picture></div>
+											<div class="inner-right-bell__text">
+												<p>Уже не первый раз покупаю гамаки в этом магазине. Прекрасное соотношение цены
+													и
+													качества!</p>
+											</div>
+											<div class="inner-right-bell__span"><span>Евгения Евина, покупатель</span></div>
+
+										</div>
+									</div>
+									<div class="inner-right-bell__slide swiper-slide">
+										<div class="inner-right-bell__reviews">
+											<div class="inner-right-bell__reviews-img"><picture><source srcset="img/bell-profile-img.webp" type="image/webp"><img src="img/bell-profile-img.png" alt="фотография профиля покупателя"></picture></div>
+											<div class="inner-right-bell__text">
+												<p>Уже не первый раз покупаю гамаки в этом магазине. Прекрасное соотношение цены
+													и
+													качества!</p>
+											</div>
+											<div class="inner-right-bell__span"><span>Евгения Евина, покупатель</span></div>
+
+										</div>
+									</div>
+								</div>
+								<button type="button" class="inner-right-bell__btn btn">Читать все отзывы</button>
+								<div class="swiper-paginationss"></div>
+								<button type="button" class="swiper-button-prevss _icon-arrow-left"></button>
+								<button type="button" class="swiper-button-nextss _icon-arrow-right"></button>
+
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<div class="footer__wrapper">
+					<div class="footer__primary">
+						<a href="#" class="footer__primary-logo"><picture><source srcset="img/logo-footer.webp" type="image/webp"><img src="img/logo-footer.png" alt="логотип"></picture></a>
+						<span class="footer__primary-span">Качественные и надежные гамаки на любой вес</span>
+					</div>
+					<div class="footer__secondary">
+						<a href="tel:+79604951818" class="footer__secondary-tel">+ 7 (960) 495 18 18</a>
+						<a href="mailto:info@pohod23.ru" class="footer__secondary-mailto">info@pohod23.ru</a>
+						<div class="footer__secondary-adres">
+							<p>935902, Россия, Новороссийск, ул. Сухумское шоссе 80</p>
+						</div>
+					</div>
+					<div class="footer__nav nav-footer">
+						<h3 class="nav-footer__title">Навигация</h3>
+						<nav class="nav-footer__body">
+							<ul class="nav-footer__list">
+								<li class="nav-footer__item"><a href="index.html" class="nav-footer__link">Главная </a></li>
+								<li class="nav-footer__item"><a href="catalog.html" class="nav-footer__link">Каталог</a></li>
+								<li class="nav-footer__item"><a href="promotions.html" class="nav-footer__link">Акции </a></li>
+							</ul>
+							<ul class="nav-footer__list">
+								<li class="nav-footer__item"><a href=".bell__inner-left" class="nav-footer__link">Контакты</a>
+								</li>
+								<li class="nav-footer__item"><a href=".bell__inner-right" class="nav-footer__link">Отзывы</a>
+								</li>
+								<li class="nav-footer__item"><a href="blogs.html" class="nav-footer__link">Блог</a></li>
+							</ul>
+							<ul class="nav-footer__list">
+								<li class="nav-footer__item"><a href="deliverys.html" class="nav-footer__link">Доставка и оплата
+									</a></li>
+								<li class="nav-footer__item"><a href="#" data-popup="#popup" class="nav-footer__link">Личный
+										кабинет</a></li>
+								<li class="nav-footer__item"><a href="baskets.html" class="nav-footer__link">Корзина</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__search">
+						<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Поиск" class="footer__search-input">
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__inner">
+					<h2 class="popup__inner-title title">Регистрация</h2>
+					<form class="popup__inner-form form" action="files/sendmail/sendmail.php" method="POST">
+						<input type="text" name="form[login]" data-error="Error" placeholder="Логин" class="input">
+						<input type="text" name="form[name]" data-error="Error" placeholder="ФИО" class="input">
+						<input autocomplete="off" type="text" name="form[email]" data-error="Error" placeholder="E-mail" class="input">
+						<input type="number" name="form[tel]" data-error="Error" placeholder="Телефон" class="input">
+
+						<input type="text" name="form[pasport]" data-error="Error" placeholder="Пароль" class="input">
+
+						<input type="text" name="form[pasport]" data-error="Error" placeholder="Повторите пароль" class="input">
+						<button type="submit" class="button button_reg">Зарегестрировать</button>
+					</form>
+					<span class="popup__inner-span">Или войдите через</span>
+					<div class="popup__inner-social social">
+						<ul class="social__list">
+							<li class="social__item"><a href="#" class="social__link _icon-wk"></a></li>
+							<li class="social__item"><a href="#" class="social__link _icon-facebook"></a></li>
+							<li class="social__item"><a href="#" class="social__link social__link_google"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- popup-2 вход в профиль -->
+	<div id="popup2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__inner">
+					<h2 class="popup__inner-title title">Вход</h2>
+					<form class="popup__inner-form form" action="files/sendmail/sendmail.php" method="POST">
+						<input autocomplete="off" type="text" name="form[email]" data-error="Error" placeholder="Логин или E-mail" class="input">
+						<input type="text" name="form[pasport]" data-error="Error" placeholder="Пароль" class="input">
+						<button type="submit" class="button button_reg">Войти</button>
+					</form>
+					<span class="popup__inner-span">Или войдите через</span>
+					<div class="popup__inner-social social">
+						<ul class="social__list">
+							<li class="social__item"><a href="#" class="social__link _icon-wk"></a></li>
+							<li class="social__item"><a href="#" class="social__link _icon-facebook"></a></li>
+							<li class="social__item"><a href="#" class="social__link social__link_google"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css?_v=20231213100828" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js?_v=20231213100828" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src="js/app.min.js?_v=20231213100828"></script>
+</body>
+
+</html>
